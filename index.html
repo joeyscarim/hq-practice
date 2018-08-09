@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>HQ Practice</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    .navbar-brand {
+      color: #373999 !important;
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">HQ Practice</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+
+      <span class="navbar-text">
+        Fan made practice game for HQ Trivia
+      </span>
+    </div>
+  </nav>
+
+  <section style="background-color: #373999">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="card my-5 mx-auto" style="width: 20rem;">
+
+            <div id="gameMode" style="display:none">
+              <div class="card-header">
+                Q
+                <span id="currentQuestionNumber"></span>
+                <span class="pull-right">HQ</span>
+              </div>
+              <div class="card-body" style="min-height:250px">
+
+                <div class="text-center" id="countdown"></div>
+
+
+                <h4 class="card-title text-center" id="hq_question"></h4>
+              </div>
+              <div class="m-2">
+                <button type="button" class="btn btn-outline-secondary btn-block" id="hq_answer_a" style="cursor:pointer"></button>
+                <button type="button" class="btn btn-outline-secondary btn-block" id="hq_answer_b" style="cursor:pointer"></button>
+                <button type="button" class="btn btn-outline-secondary btn-block" id="hq_answer_c" style="cursor:pointer"></button>
+              </div>
+              <!-- <ul class="list-group list-group-flush">
+                <li class="list-group-item" >
+
+                    <button type="button" class="btn btn-outline-secondary btn-block" id="hq_answer_a" style="cursor:pointer"></button>
+
+
+                </li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item" id="hq_answer_c"></li>
+              </ul> -->
+
+            </div>
+
+            <div id="menuMode">
+              <div class="card-header">
+                Q1
+                <span class="pull-right">HQ</span>
+              </div>
+
+              <div class="card-body" style="min-height:250px">
+
+                <!-- <div class="text-center" id="countdown"></div> -->
+                <div class="text-center mb-3">
+                  <i class="fa fa-circle" aria-hidden="true" style="color: yellow;font-size: 30px;"></i>
+                  <i class="fa fa-square" aria-hidden="true" style="color: red;font-size: 30px;"></i>
+                  <i class="fa fa-times" aria-hidden="true" style="color: green;font-size: 30px;"></i>
+                </div>
+
+                <h4 class="card-title text-center" id="titleText">
+                  12 Questions.
+                  <br> 10 Seconds each.
+                  <br> One chance.
+                  <br>
+
+
+                </h4>
+              </div>
+              <!-- <ul class="list-group list-group-flush"> -->
+              <!-- <li class="list-group-item" id="menu_start">.</li> -->
+
+              <!-- <li class="list-group-item" id="menu_start">Start Game</li> -->
+              <!-- <li class="list-group-item" id="menu_start">.</li> -->
+
+              <!-- </ul> -->
+              <div class="m-2 my-5">
+                <button type="button" class="btn btn-outline-secondary btn-block" id="menu_start" style="cursor:pointer">Start Game</button>
+                <!-- <button type="button" class="btn btn-outline-secondary btn-block" id="hq_answer_b" style="cursor:pointer"></button> -->
+                <!-- <button type="button" class="btn btn-outline-secondary btn-block" id="hq_answer_c" style="cursor:pointer"></button> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row pt-5">
+
+        <div class="col-md-6">
+          <h4>What is HQ Practice?</h4>
+          <p class="lead">
+            HQ Practice is a fan made trivia game that helps you practice for HQ Trivia. HQ Practice is in no way affiliated with HQ
+            Trivia and uses none of their trademarked graphics or content.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <h4>About HQ Practice</h4>
+          <p class="lead">
+            HQ Practice is brought to you by
+            <a target="_blank" href="http://cobrella.io">Cobrella</a>, a Denver based web and mobile app development company.
+            <!-- </p>
+          <p class="lead"> -->
+            <br>
+            <strong>Version:</strong> Beta 1
+          </p>
+        </div>
+
+      </div>
+
+      <div class="row py-4">
+
+        <div class="col-md-6">
+          <h4>What is HQ Trivia?</h4>
+          <p class="lead">
+            HQ Trivia is a "new game show on iPhone. Play live every day at 9P EST. Weekdays at 3P EST. Coming for Android this Christmas."
+            <a href="https://itunes.apple.com/us/app/hq-live-trivia-game-show/id1232278996?mt=8">Download HQ Trivia for iPhone</a>
+
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Special Thanks</h4>
+          <p class="lead">
+            HQ Practice uses these awesome open source projects:
+            <a target="_blank" href="https://opentdb.com/">Open Trivia Database</a>,
+            <a target="_blank" href="https://opentdb.com/">jQuery countdown360</a>,
+            <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a>,
+            <a target="_blank" href="https://jquery.com/">jQuery</a>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src="dist/plugins/jquery.countdown360.js"></script>
+
+  <script>
+    var questions;
+    var currentQuestion = 0;
+    var correctAnswer = 0;
+    var counter;
+
+    var countdown = $("#countdown").countdown360({
+      radius: 20,
+      seconds: 10,
+      label: false,
+      fillStyle: '#FFF',
+      fontColor: '#000',
+      smooth: true,
+      fontSize: 16,
+      clockwise: true,
+      autostart: false,
+    });
+
+    $("#menu_start").click(function () {
+      $("#menu_start").text("Loading...");
+      $.get("https://opentdb.com/api.php?amount=4&difficulty=easy&type=multiple", function (data1) {
+        $.get("https://opentdb.com/api.php?amount=4&difficulty=medium&type=multiple", function (data2) {
+          $.get("https://opentdb.com/api.php?amount=4&difficulty=hard&type=multiple", function (data3) {
+            questions = (data1.results).concat((data2.results), (data3.results));
+            displayNextQuestion();
+            $("#gameMode").show();
+            $("#menuMode").hide();
+          });
+        });
+      });
+    });
+
+    function displayNextQuestion() {
+
+      $("#currentQuestionNumber").html(currentQuestion + 1);
+
+      //set the question
+      $("#hq_question").html(questions[currentQuestion].question);
+
+      //create a random number
+      correctAnswer = Math.floor(Math.random() * 3);
+
+      if (correctAnswer == 0) {
+        $("#hq_answer_a").html(questions[currentQuestion].correct_answer);
+        $("#hq_answer_b").html(questions[currentQuestion].incorrect_answers[0]);
+        $("#hq_answer_c").html(questions[currentQuestion].incorrect_answers[1]);
+      } else if (correctAnswer == 1) {
+        $("#hq_answer_a").html(questions[currentQuestion].incorrect_answers[0]);
+        $("#hq_answer_b").html(questions[currentQuestion].correct_answer);
+        $("#hq_answer_c").html(questions[currentQuestion].incorrect_answers[1]);
+      } else if (correctAnswer == 2) {
+        $("#hq_answer_a").html(questions[currentQuestion].incorrect_answers[0]);
+        $("#hq_answer_b").html(questions[currentQuestion].incorrect_answers[1]);
+        $("#hq_answer_c").html(questions[currentQuestion].correct_answer);
+      }
+
+      countdown.start();
+      clearInterval(counter);
+      counter = setInterval(timer, 10000);
+    }
+
+    function timer() {
+      endGame();
+      clearInterval(counter);
+    }
+
+    $("#hq_answer_a").click(function () {
+      if (correctAnswer == 0) {
+        correctAnswer2();
+      } else {
+        endGame();
+      }
+    });
+
+    $("#hq_answer_b").click(function () {
+      if (correctAnswer == 1) {
+        correctAnswer2();
+      } else {
+        endGame();
+      }
+    });
+
+    $("#hq_answer_c").click(function () {
+      if (correctAnswer == 2) {
+        correctAnswer2();
+      } else {
+        endGame();
+      }
+    });
+
+    function correctAnswer2() {
+      currentQuestion++;
+      if (currentQuestion == 12) {
+        alert("You Win!");
+      } else {
+        displayNextQuestion();
+      }
+    }
+
+    function endGame() {
+      $("#menu_start").text("Start Game");
+
+      countdown.stop();
+      $("#gameMode").hide();
+      $("#menuMode").show();
+      $("#titleText").html("Game over.<br><br><br>You got " + (currentQuestion) + " correct");
+      currentQuestion = 0;
+    }
+
+  </script>
+</body>
+
+</html>
